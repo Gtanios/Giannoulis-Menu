@@ -206,8 +206,8 @@
     /* ── ACTION BUTTONS - minimal/clean redesign ── */
     .actions-bar{
       display:flex;
-      flex-direction:column;
-      gap:8px;
+      flex-direction:row;
+      gap:10px;
       padding:4px 4px 10px;
       margin:0 0 4px;
     }
@@ -218,14 +218,16 @@
     }
 
     .action-btn {
+      flex: 1 1 0;
       display: flex;
       align-items: center;
-      gap: 14px;
-      width: 100%;
-      padding: 14px 16px;
-      border-radius: 16px;
-      border: 1px solid rgba(255,255,255,.1);
-      background: rgba(255,255,255,.05);
+      gap: 12px;
+      padding: 16px 12px;
+      border-radius: 18px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(30,35,45,.72);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
       color: var(--text);
       cursor: pointer;
       appearance: none;
@@ -241,18 +243,18 @@
 
     .action-btn .btn-icon {
       flex-shrink: 0;
-      width: 40px;
-      height: 40px;
+      width: 44px;
+      height: 44px;
       display: flex;
       align-items: center;
       justify-content: center;
       color: var(--text);
-      opacity: .85;
+      opacity: .9;
     }
 
     .action-btn .btn-icon svg {
-      width: 26px;
-      height: 26px;
+      width: 30px;
+      height: 30px;
     }
 
     .action-btn .btn-text {
@@ -264,7 +266,7 @@
       display: block;
       font-size: 13px;
       font-weight: 700;
-      letter-spacing: .06em;
+      letter-spacing: .07em;
       text-transform: uppercase;
       color: var(--text);
     }
@@ -274,24 +276,24 @@
       font-size: 11px;
       font-weight: 400;
       color: var(--accent);
-      margin-top: 2px;
+      margin-top: 3px;
       letter-spacing: .02em;
     }
 
     .action-btn .btn-arrow {
       flex-shrink: 0;
-      color: var(--muted);
-      font-size: 18px;
+      color: rgba(255,255,255,.5);
+      font-size: 20px;
       line-height: 1;
     }
 
     .action-btn:hover {
-      background: rgba(255,255,255,.09);
-      border-color: rgba(255,255,255,.18);
+      background: rgba(40,47,60,.85);
+      border-color: rgba(255,255,255,.22);
     }
 
     .action-btn:active {
-      background: rgba(255,255,255,.12);
+      background: rgba(50,58,72,.9);
     }
     /* ────────────────────────────────────────────── */
 
