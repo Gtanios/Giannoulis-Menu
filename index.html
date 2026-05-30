@@ -330,17 +330,13 @@
     }
 
     .group-chip .chip-icon{
-      width:26px;
-      height:26px;
+      width:32px;
+      height:32px;
       display:flex;
       align-items:center;
       justify-content:center;
-      opacity:.9;
-    }
-
-    .group-chip .chip-icon svg{
-      width:22px;
-      height:22px;
+      font-size:24px;
+      line-height:1;
     }
 
     .group-chip .chip-title{
@@ -1227,31 +1223,31 @@
     }
 
     const chipIcons = {
-      "ΚΑΦΕΔΕΣ": `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h1a4 4 0 0 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>`,
-      "ΑΝΑΨΥΚΤΙΚΑ & ΧΥΜΟΙ": `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2h8l1 6H7L8 2z"/><path d="M7 8l1 13h8l1-13"/><line x1="10" y1="12" x2="14" y2="12"/></svg>`,
-      "ΜΠΙΡΕΣ": `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 11h1a3 3 0 0 1 0 6h-1"/><path d="M5 11h12v8a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-8z"/><path d="M5 7h14l-1 4H6L5 7z"/><path d="M9 4h1m4 0h1"/></svg>`,
-      "ΠΟΤΑ": `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 22h8"/><path d="M12 11v11"/><path d="M5 3l2 8h10l2-8H5z"/></svg>`,
-      "ΚΟΚΤΕΪΛ & ΜΟΚΤΕΪΛ": `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 22h8"/><path d="M12 11v11"/><path d="M3 3l9 8 9-8H3z"/><line x1="18" y1="6" x2="21" y2="3"/></svg>`,
-      "ΚΡΑΣΙΑ": `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 22h8"/><path d="M7 10h10"/><path d="M12 15v7"/><path d="M12 15a5 5 0 0 0 5-5V3H7v7a5 5 0 0 0 5 5z"/></svg>`,
-      "ΣΑΛΑΤΕΣ": `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a9 9 0 1 0 0 18A9 9 0 0 0 12 2z"/><path d="M12 2c0 4.4-3.6 8-8 10"/><path d="M12 2c0 4.4 3.6 8 8 10"/><line x1="12" y1="12" x2="12" y2="20"/></svg>`,
-      "ΣΝΑΚΣ": `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>`,
-      "ΠΙΤΣΕΣ": `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 20h20L12 2z"/><circle cx="12" cy="13" r="1.5" fill="currentColor"/><circle cx="9" cy="16" r="1" fill="currentColor"/><circle cx="15" cy="16" r="1" fill="currentColor"/></svg>`,
-      "ΠΑΓΩΤΟ": `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21l-6-9h12l-6 9z"/><path d="M6 12a6 6 0 1 1 12 0"/></svg>`,
-      "ΠΑΓΩΤΑ & ΓΛΥΚΑ": `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21l-6-9h12l-6 9z"/><path d="M6 12a6 6 0 1 1 12 0"/></svg>`,
-      "ΓΛΥΚΑ": `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11H4a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2z"/><path d="M12 11V7"/><path d="M8 7h8"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>`,
-      "WHISKY": `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h14l-2 13H7L5 3z"/><line x1="8" y1="22" x2="16" y2="22"/><line x1="12" y1="16" x2="12" y2="22"/></svg>`,
-      "VODKA": `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h14l-2 13H7L5 3z"/><line x1="8" y1="22" x2="16" y2="22"/><line x1="12" y1="16" x2="12" y2="22"/></svg>`,
-      "GIN": `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h14l-2 13H7L5 3z"/><line x1="8" y1="22" x2="16" y2="22"/><line x1="12" y1="16" x2="12" y2="22"/></svg>`,
-      "RUMS": `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h14l-2 13H7L5 3z"/><line x1="8" y1="22" x2="16" y2="22"/><line x1="12" y1="16" x2="12" y2="22"/></svg>`,
-      "TEQUILA": `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h14l-2 13H7L5 3z"/><line x1="8" y1="22" x2="16" y2="22"/><line x1="12" y1="16" x2="12" y2="22"/></svg>`,
-      "APERITIF & MORE": `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 22h8"/><path d="M12 11v11"/><path d="M3 3l9 8 9-8H3z"/></svg>`,
-      "ΠΑΡΑΔΟΣΙΑΚΑ": `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 22h8"/><path d="M7 10h10"/><path d="M12 15v7"/><path d="M12 15a5 5 0 0 0 5-5V3H7v7a5 5 0 0 0 5 5z"/></svg>`,
-      "WHITE WINE": `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 22h8"/><path d="M7 10h10"/><path d="M12 15v7"/><path d="M12 15a5 5 0 0 0 5-5V3H7v7a5 5 0 0 0 5 5z"/></svg>`,
-      "ROSE WINE": `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 22h8"/><path d="M7 10h10"/><path d="M12 15v7"/><path d="M12 15a5 5 0 0 0 5-5V3H7v7a5 5 0 0 0 5 5z"/></svg>`,
-      "RED WINE": `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 22h8"/><path d="M7 10h10"/><path d="M12 15v7"/><path d="M12 15a5 5 0 0 0 5-5V3H7v7a5 5 0 0 0 5 5z"/></svg>`,
-      "SPARKLING": `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 22h8"/><path d="M12 15v7"/><path d="M12 15a5 5 0 0 0 5-5V3H7v7a5 5 0 0 0 5 5z"/><circle cx="9" cy="6" r=".5" fill="currentColor"/><circle cx="15" cy="8" r=".5" fill="currentColor"/><circle cx="12" cy="4" r=".5" fill="currentColor"/></svg>`,
-      "ΜΠΙΡΕΣ 0.0%": `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 11h1a3 3 0 0 1 0 6h-1"/><path d="M5 11h12v8a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-8z"/><path d="M5 7h14l-1 4H6L5 7z"/></svg>`,
-      "CIDERS": `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 11h1a3 3 0 0 1 0 6h-1"/><path d="M5 11h12v8a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-8z"/><path d="M5 7h14l-1 4H6L5 7z"/></svg>`,
+      "ΚΑΦΕΔΕΣ": "☕",
+      "ΑΝΑΨΥΚΤΙΚΑ & ΧΥΜΟΙ": "🥤",
+      "ΜΠΙΡΕΣ": "🍺",
+      "ΠΟΤΑ": "🥃",
+      "ΚΟΚΤΕΪΛ & ΜΟΚΤΕΪΛ": "🍹",
+      "ΚΡΑΣΙΑ": "🍷",
+      "ΣΑΛΑΤΕΣ": "🥗",
+      "ΣΝΑΚΣ": "🍟",
+      "ΠΙΤΣΕΣ": "🍕",
+      "ΠΑΓΩΤΟ": "🍦",
+      "ΠΑΓΩΤΑ & ΓΛΥΚΑ": "🍨",
+      "ΓΛΥΚΑ": "🍰",
+      "WHISKY": "🥃",
+      "VODKA": "🍸",
+      "GIN": "🍸",
+      "RUMS": "🍹",
+      "TEQUILA": "🥂",
+      "APERITIF & MORE": "🍾",
+      "ΠΑΡΑΔΟΣΙΑΚΑ": "🏺",
+      "WHITE WINE": "🥂",
+      "ROSE WINE": "🌹",
+      "RED WINE": "🍷",
+      "SPARKLING": "🍾",
+      "ΜΠΙΡΕΣ 0.0%": "🍺",
+      "CIDERS": "🍏",
     };
 
     const chipSubs = {
@@ -1284,7 +1280,7 @@
 
     function renderRail() {
       groupRail.innerHTML = groupKeys.map((key, index) => {
-        const icon = chipIcons[key] || `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/></svg>`;
+        const icon = chipIcons[key] || "🍽️";
         const sub = chipSubs[key] || "";
         const label = groupTitle(key);
         return `
