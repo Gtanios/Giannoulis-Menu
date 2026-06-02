@@ -2,20 +2,21 @@
   <!-- HOTEL -->
   <text x="250" y="48" text-anchor="middle"
     font-family="'Gill Sans', 'Trebuchet MS', Arial, sans-serif"
-    font-size="22" font-weight="400" letter-spacing="12"
+    font-size="22" font-weight="700" letter-spacing="12"
     fill="#1a5fa8">HOTEL</text>
 
   <!-- Giannoulis -->
   <text x="250" y="140" text-anchor="middle"
     font-family="Georgia, 'Times New Roman', serif"
-    font-size="96" font-weight="400" font-style="italic"
+    font-size="96" font-weight="600" font-style="italic"
+    stroke="#1a5fa8" stroke-width="1.5" paint-order="stroke"
     fill="#1a5fa8">Giannoulis</text>
 
   <!-- decorative lines + PARALIA -->
-  <line x1="30" y1="172" x2="148" y2="172" stroke="#1a5fa8" stroke-width="1.2"/>
+  <line x1="30" y1="172" x2="148" y2="172" stroke="#1a5fa8" stroke-width="1.6"/>
   <text x="250" y="178" text-anchor="middle"
     font-family="'Gill Sans', 'Trebuchet MS', Arial, sans-serif"
-    font-size="17" font-weight="400" letter-spacing="9"
+    font-size="17" font-weight="700" letter-spacing="9"
     fill="#1a5fa8">PARALIA</text>
-  <line x1="352" y1="172" x2="470" y2="172" stroke="#1a5fa8" stroke-width="1.2"/>
+  <line x1="352" y1="172" x2="470" y2="172" stroke="#1a5fa8" stroke-width="1.6"/>
 </svg>
